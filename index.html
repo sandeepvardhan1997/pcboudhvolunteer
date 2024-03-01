@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Boudh Organization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: url('images/pic.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            text-align: center;
+            padding: 2em;
+            color: black; /* Set text color for better contrast on the background image */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #volunteerForm {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background for better readability */
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px; /* Optional: Add rounded corners */
+        }
+
+        #volunteerForm h3,
+        #volunteerForm p {
+            margin-bottom: 10px;
+        }
+
+        #volunteerForm form {
+            display: inline-block;
+            text-align: left;
+        }
+
+        #volunteerForm label {
+            display: block;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        #volunteerForm input {
+            width: 80%;
+            padding: 8px;
+            margin-bottom: 16px;
+        }
+
+        #volunteerForm button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PC Boudh Computer and Vocational Training Organization</h1>
+        <p>Be Volunteer for Organization and grow your career with us!</p>
+    </header>
+    <section>
+        <h2><strong>We facilitate to our Volunteer!  </strong></h2>
+        <p>We Provide the tech Jobs during 3 Months on the high profile!</p>
+        <button onclick="volunteerForm()">Volunteer Form</button>
+    </section>
+
+    <div id="volunteerForm" style="display: none;">
+        <h3>Submit for Join us!</h3>
+        <p>Stay informed about our latest updates for youth. Please Fill Form and Choose a right path for your life!</p>
+        <form id="volunteerForm" action="https://script.google.com/macros/s/AKfycbwU7KI1V6jSQTD8dcAPzU0cQIiZGZ8k2wkUSMzkmDJTQfS7bl9gOM9_JkjaPjMo2YM/exec" method="post">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name"><br><br>
+            <label for="mobile-number">Mobile Number(Kindly Provide Correct No.):</label>
+            <input type="tel" id="mobile-number" name="mobile-number"><br><br>
+            <label for="email">Email(Kindly Provide Correct Email):</label>
+            <input type="email" id="email" name="email" required> 
+            <label for="Message">Message (Any Query?):</label>
+            <input type="Message" id="Message" name="Message">   
+
+            <button type="submit">Click!</button>
+            <p>For My Best Decision</p>
+        </form>
+
+    </div>
+
+    <footer>
+        &copy; 2024 PC Boudh Organization. All rights reserved.
+    </footer>
+
+    <script>
+        function volunteerForm() {
+            document.getElementById('volunteerForm').style.display = 'block';
+        }
+    </script>
+
+</body>
